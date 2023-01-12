@@ -8,7 +8,7 @@ In case you don't, you can download it for free from their website at https://co
 the instructions provided.
 
 Once you have it installed, you can open a new VSCode window, which should look something like this:
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/vscode.png)
+![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/vscode.png?raw=true)
 
 ## Remotely Connecting
 To remotely connect, you'll need to know your course-specific account and password.
@@ -25,8 +25,8 @@ Once you have finished setting up, open a terminal in VSCode using Ctrl/Cmd + `.
 Replace the "zz" with whatever specific letters your account uses, which can be located via https://sdacs.ucsd.edu/~icc/index.php. Once you enter this,
 you'll get a message asking if you wish to continue; enter "yes". If everything goes right, your window should display something like this:
 
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/remote_connection.png)
+![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/remote_connection.png?raw=true)
 
 ## Trying out Commands
 You are now successfully connected remotely! Try running different commands; some starter commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. Have fun!
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/image.png)
+![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/image.png?raw=true)
