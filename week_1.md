@@ -1,8 +1,8 @@
-## Lab Report 1
+# Lab Report 1
 
 Hello future reader! This is a brief tutorial about logging into a course-specific account on ieng6 for remote access.
 
-# Installing VSCode
+## Installing VSCode
 If you've taken a CS class at UCSD before, chances are you already have VSCode installed on your computer.
 In case you don't, you can download it for free from their website at https://code.visualstudio.com/ by following
 the instructions provided.
@@ -10,7 +10,7 @@ the instructions provided.
 Once you have it installed, you can open a new VSCode window, which should look something like this:
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/vscode.png)
 
-# Remotely Connecting
+## Remotely Connecting
 To remotely connect, you'll need to know your course-specific account and password.
 If you don't have that ready, try following these instructions: [TUTORIAL](https://docs.google.com/document/d/1hs7CyQeh-MdUfM9uv99i8tqfneos6Y8bDU0uhn1wqho/edit)
 
@@ -27,6 +27,6 @@ you'll get a message asking if you wish to continue; enter "yes". If everything 
 
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/remote_connection.png)
 
-# Trying out Commands
+## Trying out Commands
 You are now successfully connected remotely! Try running different commands; some starter commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. Have fun!
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/image.png)
