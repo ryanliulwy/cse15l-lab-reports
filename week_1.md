@@ -4,8 +4,9 @@ Hello future reader! This is a brief tutorial about logging into a course-specif
 
 ## Installing VSCode
 If you've taken a CS class at UCSD before, chances are you already have VSCode installed on your computer.
-In case you don't, you can download it for free from their website at https://code.visualstudio.com/ by following
-the instructions provided.
+In case you don't, you can download it for free from https://code.visualstudio.com/ by following
+the instructions provided on the website. It should be pretty straightforward, and there are versions available
+for both Windows and Mac users.
 
 Once you have it installed, you can open a new VSCode window, which should look something like this:
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/vscode.png?raw=true)
@@ -28,5 +29,12 @@ you'll get a message asking if you wish to continue; enter "yes". If everything 
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/remote_connection.png?raw=true)
 
 ## Trying out Commands
-You are now successfully connected remotely! Try running different commands; some starter commands are `cd`, `ls`, `pwd`, `mkdir`, and `cp`. Have fun!
+You are now successfully connected remotely! Try running different commands. Some commands to get started include:
+* `cd`, which changes the current directory to a specified one if the path is found
+* `ls`, which lists files located under the current directory
+* `pwd`, which prints the full path name of the current directory
+* `mkdir`, which creates a new directory
+* `cp`, which can copy files or directories
+
+Have fun!
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/image.png?raw=true)
