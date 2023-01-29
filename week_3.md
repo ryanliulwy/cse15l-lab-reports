@@ -121,7 +121,7 @@ Fixed code:
         return newArray;
     }
 
-The bug was. To fix this,
+The original code copied the elements from the new array to the old array in reverse order, and then returned the old array. This is problematic because the new array is initiated with all of its elements set to zero, meaning the code would replace every element in the original array with zeros as well. Returning either array in this case would return a zero array. The fix is to have the elements of the old array assigned to the indices of the new array in reverse order, not the other way around. This properly copies the elements over to the new array, which should then be the array that is returned by the method.
 
 ## Part 3
-I learned a lot about paths and urls during week 2, such as the names and purpose of different parts in a url (domain, path, query). During lab, I was able to put this into practice by creating and hosting my own basic search engine website locally with localhost, another skill that I did not have before. I was also able to try hosting the same website on the ieng6 server, and it was cool seeing how my lab partner could send requests through his computer that would then be reflected on mine.
+I learned a lot about paths and urls during week 2, such as the names and purpose of different parts in a url (domain, path, query). During lab, I was able to put this into practice by creating and hosting my own basic search engine website locally with localhost, another skill that I did not have before. I was also able to try hosting the same website on the ieng6 server, and it was interesting to see how my lab partner could send requests through his computer that would cause changes to be reflected on my screen too.
