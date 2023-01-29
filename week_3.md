@@ -86,21 +86,26 @@ Pretty much the same as above, with a few differences in specific inputs
 
 ## Part 2
 Testing original ArrayExamples reversed method
-### Failure-inducing input
+### Failure-inducing input:
+
     @Test
     public void testReversedThreeElements() {
         int[] input2 = {1, 2, 3};
         assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input2));
     }
-### Non-failure-inducing input
+
+### Non-failure-inducing input:
+
     @Test
     public void testReversedEmpty() {
         int[] input1 = { };
         assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
     }
-### Symptom
+
+### Symptom:
 ![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/reversed_symptom.png)
-### Bug fix
+
+### Bug fix:
 Original code:
 
     static int[] reversed(int[] arr) {
