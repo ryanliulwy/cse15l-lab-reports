@@ -87,3 +87,4 @@ Pretty much the same as above, with a few differences in specific inputs
 
 
 ## Part 3
+I learned a lot about paths and urls during week 2, such as the names and purpose of different parts in a url (domain, path, query). During lab, I was able to put this into practice by creating and hosting my own basic search engine website locally with localhost, another skill that I did not have before. I was also able to try hosting the same website on the ieng6 server, and it was cool seeing how my lab partner could send requests through his computer that would then be reflected on mine.
