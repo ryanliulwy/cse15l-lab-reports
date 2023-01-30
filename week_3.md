@@ -43,7 +43,7 @@ class StringServer {
 *Created using code from Lab 2 as a base*
 
 ### /add-message Examples:
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/hello_output.png)
+![image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/hello_output.png)
 - The method handleRequest() is called, which then calls getPath(), contains(), getQuery(), split(), and equals()
   - handleRequest() takes in a full url as an argument
     - In this case it would be https://localhost:4000/add-message?s=Hello
@@ -62,7 +62,7 @@ class StringServer {
     - "\nHello" is added to runningString
     - runningString now contains "\nHello"
 
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/how_are_you_output.png)
+![image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/how_are_you_output.png)
 
 Pretty much the same as above, with a few differences in specific inputs
 - The method handleRequest() is once again called, which still calls getPath(), contains(), getQuery(), split(), and equals()
@@ -103,7 +103,7 @@ Testing original ArrayExamples reversed method
     }
 
 ### Symptom:
-![Image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/reversed_symptom.png)
+![image](https://github.com/ryanliulwy/cse15l-lab-reports/blob/main/screenshots/reversed_symptom.png)
 
 ### Bug fix:
 Original code:
