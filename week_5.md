@@ -6,7 +6,7 @@ The source used for all of the below information is [https://www.geeksforgeeks.o
 The `grep` command searches a file for a pattern, and prints out all lines that contain a match to the pattern. The following are some useful options for the command that can take care of several useful functions:
 
 ### `-r`
-The `-r` option allows us to recursively search through every file in a directory and its subdirectories, which is very useful for finding the location of a desired pattern within a directory especially if we don't know the specific file which the pattern is in. Using `-r` is much faster than manually inputting every possible combination of `\*.txt`, `\*/\*.txt`, `\*/\*/\*.txt`, etc., and the more subdirectories exist, the more efficient simply using `-r` becomes.
+The `-r` option allows us to recursively search through every file in a directory and its subdirectories, which is very useful for finding the location of a desired pattern within a directory especially if we don't know the specific file which the pattern is in. Using `-r` is much faster than manually inputting every possible combination of `*.txt`, `*/*.txt`, `*/*/*.txt`, etc., and the more subdirectories exist, the more efficient simply using `-r` becomes.
 
 Let's use the "Lucayans" task from Skill Demo 1 as our first example:
 ~~~
