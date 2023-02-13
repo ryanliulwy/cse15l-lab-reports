@@ -106,7 +106,7 @@ However, adding `-w` changes this:
 $ grep -r -l -w "ice crea" written_2/
 
 ~~~
-Instead of accepting any time the pattern "ice crea" appears as a match, `-w` will only return a match if the pattern is found as a whole word and not a substring.
+Instead of accepting any time the pattern "ice crea" appears as a match, `-w` will make it so `grep` will only return a match if the pattern is found as a whole word and not a substring of another, larger word. As a result, no matches are found this time and nothing is displayed.
 Returning to the "Lucayans" example, let's try searching for "Lucayan" without the "s":
 ~~~
 $ grep -r -l "Lucayan" written_2/
