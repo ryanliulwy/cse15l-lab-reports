@@ -62,7 +62,7 @@ $ grep -r -c "the" written_2/travel_guides/berlitz2/Bahamas-History.txt
 ~~~
 We see that the pattern "the" appears in 30 lines total in the file `Bahamas-History.txt`.
 
-If there are multiple files that contain the pattern, grep will show how many lines the pattern appears in each individual file separately. I've cut down the below output to just a few lines since "the" is likely to be found most of the text files:
+If there are multiple files that contain the pattern, `grep` will show how many lines the pattern appears in each individual file separately. I've cut down the below output to just a few lines since "the" is likely to be found most of the text files:
 ~~~
 $ grep -r -c "the" written_2/
 written_2/non-fiction/OUP/Abernathy/ch1.txt:68
