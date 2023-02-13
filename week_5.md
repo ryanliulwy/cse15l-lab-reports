@@ -29,7 +29,7 @@ As we see here, I didn't have to know how many subdirectories the command would 
 I'll be using `-r` for the many of the following options demonstrations as well, since I often want to search through the entire directory as opposed to a single file. I imagine there are many actual applications where searching through directories rather than single files is desireable, so I hope the below examples will suffice for showing how useful `-r` can be too.
 
 ### `-l`
-By default, `grep` will print every line in its entirety that contains the searched pattern. Going back to the "Lucayans" example from above, the actual task was just to find the file name, and while technically we do see it is located in `written_2/travel_guides/berlitz2/Bahamas-History.txt`, there's quite a bit of extra text that's unnecessary for completing the task. The `-l` option will make it so that `grep` only displays the filenames and not every line, cutting down on unwanted clutter when just the file name is wanted.
+By default, `grep` will print every line in its entirety that contains the searched pattern. Going back to the "Lucayans" example from above, the actual task was just to find the file name, and while technically we do see it is located in `written_2/travel_guides/berlitz2/Bahamas-History.txt`, there's quite a bit of extra text that's unnecessary for completing the task. The `-l` option will make it so that `grep` only displays the file names and not every line, cutting down on unwanted clutter when just the file name is wanted.
 
 ~~~
 $ grep -r -l "Lucayans" written_2/
