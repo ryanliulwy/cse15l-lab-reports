@@ -28,7 +28,7 @@ As we see here, I didn't have to know how many subdirectories the command would 
 
 I'll be using `-r` for the many of the following options demonstrations as well, since I often want to search through the entire directory as opposed to a single file. I imagine there are many actual applications where searching through directories rather than single files is desireable, so I hope the below examples will suffice for showing how useful `-r` can be too.
 
-### -l 
+### `-l`
 By default, `grep` will print every line in its entirety that contains the searched pattern. Going back to the "Lucayans" example from above, the actual task was just to find the file name, and while technically we do see it is located in `written_2/travel_guides/berlitz2/Bahamas-History.txt`, there's quite a bit of extra text that's unnecessary for completing the task. The `-l` option will make it so that grep only displays the filenames and not every line, cutting down on unwanted clutter when just the file name is wanted.
 
 ~~~
@@ -52,7 +52,7 @@ written_2/travel_guides/berlitz2/Paris-WhereToGo.txt
 ~~~
 Nice!
 
-### -c
+### `-c`
 What if we didn't need to know which lines the pattern is located in, but simply needed to know how many total lines contain the pattern? Once again, `grep`'s default return behaviour doesn't quite suit our needs, as counting every single returned line by hand would be incredibly inefficient.
 
 For example, an extremely common pattern like "the" would absolutely flood the terminal, and you probably wouldn't get much usable information out of your command. If we just wanted to know how many lines contain "the" in a given file, we could more fittingly use:
@@ -84,7 +84,7 @@ $ grep -r -c "Lucayans" written_2/travel_guides/berlitz2/Bahamas-History.txt
 If we go back to our first `grep` search for "Lucayans" that displayed the lines, we can manually count and confirm that "Lucayans" indeed appears in two lines of the file.
 Unfortunately, this command does not count a pattern multiple times if it appears more than once in a single line, but it can still have its uses. For example, if you're working with data that you know only contains one word per line, you can use `grep -l` in the same way you would otherwise use the `wc` command.
 
-### -w
+### `-w`
 Let's consider the following command:
 ~~~
 $ grep -r -l "ice crea" written_2/
