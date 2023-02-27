@@ -51,6 +51,6 @@ Since we very recently ran the same commands, pressing up 3 times and then enter
 
 **Keys Pressed:** `<ctrl + R> "git a" <enter>`, `<ctrl + R> "git co" <enter>`, `"git push" <enter>`
 
-As always, we have to be precise enough for <ctrl + R> to return the right command. The first thing we want to do is add our changed file, so the first sequence will run git `add ListExamples.java`. Since we more recently ran `git clone`, typing out "git co" instead of just "git c" before hitting enter is necessary here to run `git commit -m "done"`. `git push` is small enough to just type out, so using `<ctrl + R>` here wouldn't really save much time at all.
+As always, we have to be precise enough for <ctrl + R> to return the right command. The first thing we want to do is add our changed file, so the first sequence will run `git add ListExamples.java`. Since we more recently ran `git clone`, typing out "git co" instead of just "git c" before hitting enter is necessary here to run `git commit -m "done"`. `git push` is small enough to just type out, so using `<ctrl + R>` here wouldn't really save much time at all.
 
 And now the task is complete!
