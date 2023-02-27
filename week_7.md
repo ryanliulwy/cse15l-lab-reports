@@ -25,7 +25,7 @@ Since I've already completed the task before, the `git clone git@github.com:ryan
 
 **Keys Pressed:** `<ctrl + R> "javac" <enter>`, `<ctrl + R> "java " <enter>`
 
-I use `<ctrl + R>` to search for `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` in order to compile the jave files in the directory, typing in "javac" as the argument before hitting `<enter>` because, once again, anything less will return the wrong command. This is followed with `<ctrl + R> "java " <enter>` in order to actually run the tests with `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamples`. Note that there **must** be a space after "java" this time. Without the space, the search will match with the `javac` command we ran just before, since `<ctrl + R>` will try to return the most recent match.
+I use `<ctrl + R>` to search for `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` in order to compile the jave files in the directory, typing in "javac" as the argument before hitting `<enter>` because, once again, anything less will return the wrong command. This is followed with `<ctrl + R> "java " <enter>` in order to actually run the tests with `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`. Note that there **must** be a space after "java" this time. Without the space, the search will match with the `javac` command we ran just before, since `<ctrl + R>` will try to return the most recent match.
 
 ## Step 7: Edit the code file to fix the failing test
 ![image](https://user-images.githubusercontent.com/110417482/221452169-36dc8bd5-d563-4622-9fa9-d1cb1488dfc4.png)
@@ -43,8 +43,14 @@ I don't know how to use `^W` well enough to navigate to the specific instance of
 
 **Keys Pressed:** `<up> <up> <up> <enter>`, `<up> <up> <up> <enter>`
 
-Since we very recently ran the same commands, pressing up 3 times will access `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` to recompile the fixed code, and pressing up 3 times after running that will access `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests` once more to run the tests on the fixed code.
+Since we very recently ran the same commands, pressing up 3 times and then enter will run `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` to recompile the fixed code, and pressing up 3 times after that will access `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`, to run the tests on the fixed code.
 
 ## Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
 
-**Keys Pressed:** `<ctrl + R>`
+![image](https://user-images.githubusercontent.com/110417482/221452877-e92251ef-8e26-4107-8b74-ac472a99cc02.png)
+
+**Keys Pressed:** `<ctrl + R> "git a" <enter>`, `<ctrl + R> "git co" <enter>`, `"git push" <enter>`
+
+As always, we have to be precise enough for <ctrl + R> to return the right command. The first thing we want to do is add our changed file, so the first sequence will run git `add ListExamples.java`. Since we more recently ran `git clone`, typing out "git co" instead of just "git c" before hitting enter is necessary here to run `git commit -m "done"`. "git push" is small enough to just type out, so using `<ctrl + R>` here isn't really saving much time at all.
+
+And now the task is complete!
