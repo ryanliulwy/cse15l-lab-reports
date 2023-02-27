@@ -45,7 +45,7 @@ I don't know how to use `^W` well enough to navigate to the specific instance of
 
 Since we very recently ran the same commands, pressing up 3 times and then enter will run `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java` to recompile the fixed code, and pressing up 3 times after that will access `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests`, to run the tests on the fixed code.
 
-## Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+## Step 9: Commit and push the resulting change to Github
 
 ![image](https://user-images.githubusercontent.com/110417482/221452877-e92251ef-8e26-4107-8b74-ac472a99cc02.png)
 
