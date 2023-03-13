@@ -36,7 +36,7 @@ The first sequence using `<ctrl + R>` with "na" as the argument will find `nano 
 
 ![image](https://user-images.githubusercontent.com/110417482/221450923-7dc529f0-ef3f-48c6-861a-e69118ec0973.png)
 
-I pressed `<down>` 42 times and `<right>` 11 times once within the nano interface to move the cursor to where the edit needed to be made. Once the `1` is manually changed to `2`, `<ctrl + O> <enter>` will save the changes made to `ListExamples.java` and `<ctrl + X>` will exit nano.
+I pressed `<down>` 42 times and `<right>` 11 times once within the nano interface to move the cursor to where the edit needed to be made. Once the `1` is manually changed to `2` by pressing the `<delete>` key and then typing "2", `<ctrl + O> <enter>` will save the changes made to `ListExamples.java` and `<ctrl + X>` will exit nano.
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 ![image](https://user-images.githubusercontent.com/110417482/221452282-6ce54cf5-7d4d-4a01-abfe-2f4c171b86cb.png)
