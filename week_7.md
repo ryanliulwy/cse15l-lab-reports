@@ -30,13 +30,13 @@ I use `<ctrl + R>` to search for `javac -cp .:lib/hamcrest-core-1.3.jar:lib/juni
 ## Step 7: Edit the code file to fix the failing test
 ![image](https://user-images.githubusercontent.com/110417482/221452169-36dc8bd5-d563-4622-9fa9-d1cb1488dfc4.png)
 
-**Keys Pressed:** `<ctrl + R> "na" <enter>`, `<down>` 42x, `<right>` 11x, `<delete> "2" <ctrl + O> <enter> <ctrl + X>`
+**Keys Pressed:** `<ctrl + R> "na" <enter>`, `<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down>`, `<right><right><right><right><right><right><right><right><right><right><right>`, `<delete> "2" <ctrl + O> <enter> <ctrl + X>`
 
-The first sequence will find `nano ListExamples.java` from my command history and run it. This opens up the nano interface to fix the bug at line 42, where `index1` is incremented instead of `index2` and as a result may cause an infinite loop to happen.
+The first sequence using `<ctrl + R>` with "na" as the argument will find `nano ListExamples.java` from my command history and run it. This opens up the nano interface to fix the bug at line 42, where `index1` is incremented instead of `index2` and as a result may cause an infinite loop to happen.
 
 ![image](https://user-images.githubusercontent.com/110417482/221450923-7dc529f0-ef3f-48c6-861a-e69118ec0973.png)
 
-I don't know how to use `^W` well enough to navigate to the specific instance of `index1` I want to edit, or if that's even possible, so I kinda brute forced this segment and used down and right arrows to get to where I needed to be by hand. Once the `1` is changed to `2`, `<ctrl + O> <enter>` will save the changes made to `ListExamples.java` and `<ctrl + X>` will exit nano.
+I pressed `<down>` 42 times and `<right>` 11 times once within the nano interface to move the cursor to where the edit needed to be made. Once the `1` is manually changed to `2`, `<ctrl + O> <enter>` will save the changes made to `ListExamples.java` and `<ctrl + X>` will exit nano.
 
 ## Step 8: Run the tests, demonstrating that they now succeed
 ![image](https://user-images.githubusercontent.com/110417482/221452282-6ce54cf5-7d4d-4a01-abfe-2f4c171b86cb.png)
@@ -51,6 +51,6 @@ Since we very recently ran the same commands, pressing up 3 times and then enter
 
 **Keys Pressed:** `<ctrl + R> "git a" <enter>`, `<ctrl + R> "git co" <enter>`, `"git push" <enter>`
 
-As always, we have to be precise enough for <ctrl + R> to return the right command. The first thing we want to do is add our changed file, so the first sequence will run `git add ListExamples.java`. Since we more recently ran `git clone`, typing out "git co" instead of just "git c" before hitting enter is necessary here to run `git commit -m "done"`. `git push` is small enough to just type out, so using `<ctrl + R>` here wouldn't really save much time at all.
+As always, we have to be precise enough for `<ctrl + R>` to return the right command. The first thing we want to do is add our changed file to git, so the first sequence with "git a" as its argument will run `git add ListExamples.java`. For the next `<ctrl + R>`, since we more recently ran `git clone`, typing out "git co" instead of just "git c" before hitting enter is necessary here to run `git commit -m "done"`. `git push` is small enough to just type out manually, so using `<ctrl + R>` here wouldn't really save much time at all.
 
 And now the task is complete!
